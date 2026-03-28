@@ -3,13 +3,11 @@ import { Header } from './components/Header'
 import { HeroSection } from './components/HeroSection'
 import { AvailableNow } from './components/AvailableNow'
 import { MonitoringSection } from './components/MonitoringSection'
-import { InfoDrawer } from './components/InfoDrawer'
 import { LoadingState, ErrorState } from './components/LoadingState'
 import { useSlots } from './hooks/useSlots'
 
 export default function App() {
-  const { available, monitoring, loading, error, lastFetch, refresh, data } = useSlots()
-  const [infoOpen, setInfoOpen] = useState(false)
+  const { available, monitoring, loading, error, refresh, data } = useSlots()
   const [subscribedCountries, setSubscribedCountries] = useState<string[]>(() => {
     try {
       const raw = localStorage.getItem('slot-watch-subscribed')
@@ -43,19 +41,14 @@ export default function App() {
     [subscribedCountries]
   )
 
-  const totalCountries = (data?.countries.length ?? 0)
-
   return (
     <div className="min-h-screen bg-dark-900 text-white font-mono">
-      <Header lastChecked={lastFetch} onMenuClick={() => setInfoOpen(true)} />
+      <Header dataUpdatedAt={data?.updatedAt ?? null} />
 
-      {/* Hero */}
-      <HeroSection totalAvailable={available.length} totalCountries={totalCountries} />
+      <HeroSection totalAvailable={available.length} totalCountries={data?.countries.length ?? 0} />
 
-      {/* Divider */}
       <div className="border-t border-dark-500 mx-4 max-w-6xl md:mx-auto" />
 
-      {/* Main content */}
       <main className="max-w-6xl mx-auto px-4 py-8">
         {loading ? (
           <LoadingState />
@@ -63,7 +56,6 @@ export default function App() {
           <ErrorState message={error} onRetry={refresh} />
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left: Available Now */}
             <div>
               {available.length > 0 ? (
                 <AvailableNow countries={available} />
@@ -71,8 +63,6 @@ export default function App() {
                 <NoSlotsPlaceholder />
               )}
             </div>
-
-            {/* Right: Monitoring */}
             <div>
               <MonitoringSection
                 countries={monitoring}
@@ -84,23 +74,11 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-dark-500 px-4 py-6 mt-8">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#333]">
-          <span>Slot Watch — Schengen visa tracker for London</span>
-          <div className="flex items-center gap-4">
-            <span>Checks every 30 min</span>
-            <button
-              onClick={() => setInfoOpen(true)}
-              className="hover:text-[#666] transition-colors"
-            >
-              How it works
-            </button>
-          </div>
-        </div>
+        <p className="max-w-6xl mx-auto text-xs text-[#333] text-center sm:text-left">
+          Slot Watch — Schengen visa tracker for London · checks every hour
+        </p>
       </footer>
-
-      <InfoDrawer isOpen={infoOpen} onClose={() => setInfoOpen(false)} />
     </div>
   )
 }
@@ -110,7 +88,7 @@ function NoSlotsPlaceholder() {
     <div className="border border-dark-500 rounded-lg p-6 text-center">
       <div className="w-2 h-2 rounded-full bg-[#333] mx-auto mb-3" />
       <p className="text-xs text-[#444]">No slots available right now</p>
-      <p className="text-xs text-[#333] mt-1">Checking every 30 minutes</p>
+      <p className="text-xs text-[#333] mt-1">Checking every hour</p>
     </div>
   )
 }
