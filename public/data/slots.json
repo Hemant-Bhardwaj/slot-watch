@@ -122,14 +122,9 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/isl/schedule-appointment",
       "tracked": true,
-      "available": true,
+      "available": false,
       "waitlist": false,
-      "slots": [
-        {
-          "date": "2026-06-04",
-          "count": 2
-        }
-      ],
+      "slots": [],
       "lastChecked": "2026-03-28T19:09:36.511Z"
     },
     {
