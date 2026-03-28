@@ -52,21 +52,20 @@ serve(async (req) => {
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!
     const supabaseKey = Deno.env.get('SERVICE_ROLE_KEY')!
 
-    // Upsert subscriber
-    const dbRes = await fetch(`${supabaseUrl}/rest/v1/subscribers`, {
+    // Upsert subscriber — append country to array if email already exists
+    const dbRes = await fetch(`${supabaseUrl}/rest/v1/rpc/upsert_subscriber`, {
       method: 'POST',
       headers: {
         apikey: supabaseKey,
         Authorization: `Bearer ${supabaseKey}`,
         'Content-Type': 'application/json',
-        Prefer: 'resolution=merge-duplicates',
       },
-      body: JSON.stringify({ email, countries: [countryCode] }),
+      body: JSON.stringify({ p_email: email, p_country: countryCode }),
     })
 
     if (!dbRes.ok) {
       const body = await dbRes.text()
-      throw new Error(`DB insert failed: ${body}`)
+      throw new Error(`DB upsert failed: ${body}`)
     }
 
     // Send confirmation email
