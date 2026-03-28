@@ -122,14 +122,9 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/isl/schedule-appointment",
       "tracked": true,
-      "available": true,
+      "available": false,
       "waitlist": false,
-      "slots": [
-        {
-          "date": "2026-06-08",
-          "count": 1
-        }
-      ],
+      "slots": [],
       "lastChecked": "2026-03-28T20:40:41.297Z"
     },
     {
@@ -139,14 +134,9 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/ita/schedule-appointment",
       "tracked": true,
-      "available": true,
+      "available": false,
       "waitlist": false,
-      "slots": [
-        {
-          "date": "2026-06-15",
-          "count": 1
-        }
-      ],
+      "slots": [],
       "lastChecked": "2026-03-28T20:40:41.297Z"
     },
     {
