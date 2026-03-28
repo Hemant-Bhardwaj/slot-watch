@@ -168,7 +168,7 @@ async function sendEmail(to, country, firstDate) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: `Slot Watch <${process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'}>`,
+        from: `Slot Watch <onboarding@resend.dev>`,
         to: [to],
         subject: `${country.flag} ${country.name} visa slot open — ${firstDate}`,
         html: `
