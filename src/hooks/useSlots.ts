@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { SlotsData, CountrySlot } from '../types'
 
-const SLOTS_URL = `${import.meta.env.BASE_URL}data/slots.json`
+const SLOTS_URL =
+  'https://raw.githubusercontent.com/Hemant-Bhardwaj/slot-watch/main/public/data/slots.json'
 const REFRESH_INTERVAL = 60 * 60 * 1000 // poll every hour (matches scraper cadence)
 
 export function useSlots() {
