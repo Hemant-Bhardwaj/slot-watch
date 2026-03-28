@@ -1,0 +1,316 @@
+{
+  "updatedAt": "2026-03-27T13:06:05.174Z",
+  "location": "London, UK",
+  "countries": [
+    {
+      "code": "at",
+      "name": "Austria",
+      "flag": "🇦🇹",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/aut/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "bg",
+      "name": "Bulgaria",
+      "flag": "🇧🇬",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/bgr/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "hr",
+      "name": "Croatia",
+      "flag": "🇭🇷",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/hrv/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "cy",
+      "name": "Cyprus",
+      "flag": "🇨🇾",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/cyp/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "cz",
+      "name": "Czech Republic",
+      "flag": "🇨🇿",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/cze/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "dk",
+      "name": "Denmark",
+      "flag": "🇩🇰",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/dnk/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "ee",
+      "name": "Estonia",
+      "flag": "🇪🇪",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/est/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "fi",
+      "name": "Finland",
+      "flag": "🇫🇮",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/fin/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "hu",
+      "name": "Hungary",
+      "flag": "🇭🇺",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/hun/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "is",
+      "name": "Iceland",
+      "flag": "🇮🇸",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/isl/schedule-appointment",
+      "tracked": true,
+      "available": true,
+      "waitlist": false,
+      "slots": [
+        {
+          "date": "2026-06-04",
+          "count": 2
+        }
+      ],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "it",
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/ita/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "lv",
+      "name": "Latvia",
+      "flag": "🇱🇻",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/lva/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "lt",
+      "name": "Lithuania",
+      "flag": "🇱🇹",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/ltu/schedule-appointment",
+      "tracked": true,
+      "available": true,
+      "waitlist": false,
+      "slots": [
+        {
+          "date": "2026-04-17",
+          "count": 1
+        }
+      ],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "mt",
+      "name": "Malta",
+      "flag": "🇲🇹",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/mlt/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": true,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "nl",
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/nld/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "no",
+      "name": "Norway",
+      "flag": "🇳🇴",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/nor/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "pt",
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/prt/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "si",
+      "name": "Slovenia",
+      "flag": "🇸🇮",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/svn/schedule-appointment",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "ch",
+      "name": "Switzerland",
+      "flag": "🇨🇭",
+      "visaCenter": "TLScontact",
+      "bookingUrl": "https://uk.tlscontact.com/appointment/gb/ldn2ch/login",
+      "tracked": true,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "be",
+      "name": "Belgium",
+      "flag": "🇧🇪",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/bel/schedule-appointment",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "fr",
+      "name": "France",
+      "flag": "🇫🇷",
+      "visaCenter": "TLScontact",
+      "bookingUrl": "https://uk.tlscontact.com/appointment/gb/ldn2fr/login",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "de",
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/deu/schedule-appointment",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "gr",
+      "name": "Greece",
+      "flag": "🇬🇷",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/grc/schedule-appointment",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "es",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "visaCenter": "BLS International",
+      "bookingUrl": "https://blsspainuk.com/appointment",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    },
+    {
+      "code": "se",
+      "name": "Sweden",
+      "flag": "🇸🇪",
+      "visaCenter": "VFS Global",
+      "bookingUrl": "https://visa.vfsglobal.com/gbr/en/swe/schedule-appointment",
+      "tracked": false,
+      "available": false,
+      "waitlist": false,
+      "slots": [],
+      "lastChecked": "2026-03-27T13:06:05.174Z"
+    }
+  ]
+}

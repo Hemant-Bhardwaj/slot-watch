@@ -1,0 +1,44 @@
+name: Check Visa Slots
+
+on:
+  schedule:
+    # Every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Allow manual runs
+
+permissions:
+  contents: write   # Needed to commit slots.json
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run slot checker
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          VFS_EMAIL: ${{ secrets.VFS_EMAIL }}
+          VFS_PASSWORD: ${{ secrets.VFS_PASSWORD }}
+          TLSC_EMAIL: ${{ secrets.TLSC_EMAIL }}
+          TLSC_PASSWORD: ${{ secrets.TLSC_PASSWORD }}
+          BLS_EMAIL: ${{ secrets.BLS_EMAIL }}
+          BLS_PASSWORD: ${{ secrets.BLS_PASSWORD }}
+        run: node scripts/check-slots.js
+
+      - name: Commit updated slots.json
+        run: |
+          git config user.name "slot-watch-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/data/slots.json
+          # Only commit if there are changes
+          git diff --staged --quiet || git commit -m "chore: update slots data [skip ci]"
+          git push
