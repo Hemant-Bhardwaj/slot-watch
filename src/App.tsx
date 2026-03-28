@@ -19,19 +19,17 @@ export default function App() {
 
   const handleSubscribe = useCallback(
     async (countryCode: string, email: string) => {
-      if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+      if (!import.meta.env.VITE_SUPABASE_URL) {
         throw new Error('Supabase not configured — see README.')
       }
-      const res = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/rest/v1/subscribers`, {
-        method: 'POST',
-        headers: {
-          apikey: import.meta.env.VITE_SUPABASE_ANON_KEY,
-          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-          'Content-Type': 'application/json',
-          Prefer: 'return=minimal',
-        },
-        body: JSON.stringify({ email, countries: [countryCode] }),
-      })
+      const res = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/subscribe`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, countryCode }),
+        }
+      )
       if (!res.ok) throw new Error('Subscription failed')
 
       const updated = Array.from(new Set([...subscribedCountries, countryCode]))
