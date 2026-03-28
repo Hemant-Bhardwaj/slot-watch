@@ -47,7 +47,7 @@ function AvailableCard({ country }: { country: CountrySlot }) {
         </div>
         <div className="text-right">
           <span className="text-xs text-lime-400 bg-lime-400/10 border border-lime-400/20 px-2 py-0.5 rounded">
-            {totalSlots} {totalSlots === 1 ? 'slot' : 'slots'}
+            slots available
           </span>
         </div>
       </div>
@@ -55,10 +55,7 @@ function AvailableCard({ country }: { country: CountrySlot }) {
       {firstSlot && (
         <div className="space-y-1">
           <p className="text-xs font-bold text-lime-400">
-            First available: {formatDate(firstSlot.date)}{' '}
-            <span className="text-[#555] font-normal">
-              · {firstSlot.count} {firstSlot.count === 1 ? 'slot' : 'slots'}
-            </span>
+            First available: {formatDate(firstSlot.date)}
           </p>
           {otherSlots.length > 0 && (
             <p className="text-xs text-lime-400/70">
