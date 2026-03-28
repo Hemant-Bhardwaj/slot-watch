@@ -38,7 +38,8 @@ jobs:
         run: |
           git config user.name "slot-watch-bot"
           git config user.email "bot@users.noreply.github.com"
+          git pull --rebase
           git add public/data/slots.json
           # Only commit if there are changes
           git diff --staged --quiet || git commit -m "chore: update slots data"
-          git pull --rebase && git push
+          git push
