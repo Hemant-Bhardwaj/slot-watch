@@ -1,4 +1,3 @@
-import { useState, useCallback } from 'react'
 import { Header } from './components/Header'
 import { HeroSection } from './components/HeroSection'
 import { AvailableNow } from './components/AvailableNow'
@@ -8,36 +7,6 @@ import { useSlots } from './hooks/useSlots'
 
 export default function App() {
   const { available, monitoring, loading, error, refresh, data } = useSlots()
-  const [subscribedCountries, setSubscribedCountries] = useState<string[]>(() => {
-    try {
-      const raw = localStorage.getItem('slot-watch-subscribed')
-      return raw ? JSON.parse(raw) : []
-    } catch {
-      return []
-    }
-  })
-
-  const handleSubscribe = useCallback(
-    async (countryCode: string, email: string) => {
-      if (!import.meta.env.VITE_SUPABASE_URL) {
-        throw new Error('Supabase not configured — see README.')
-      }
-      const res = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/subscribe`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, countryCode }),
-        }
-      )
-      if (!res.ok) throw new Error('Subscription failed')
-
-      const updated = Array.from(new Set([...subscribedCountries, countryCode]))
-      setSubscribedCountries(updated)
-      localStorage.setItem('slot-watch-subscribed', JSON.stringify(updated))
-    },
-    [subscribedCountries]
-  )
 
   return (
     <div className="min-h-screen bg-dark-900 text-white font-mono">
@@ -62,11 +31,7 @@ export default function App() {
               )}
             </div>
             <div>
-              <MonitoringSection
-                countries={monitoring}
-                subscribedCountries={subscribedCountries}
-                onSubscribe={(code, email) => handleSubscribe(code, email)}
-              />
+              <MonitoringSection countries={monitoring} />
             </div>
           </div>
         )}

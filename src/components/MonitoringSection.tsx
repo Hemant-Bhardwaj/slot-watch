@@ -1,15 +1,11 @@
 import { useState } from 'react'
 import { CountrySlot } from '../types'
-import { NotifyModal } from './NotifyModal'
 
 interface MonitoringSectionProps {
   countries: CountrySlot[]
-  subscribedCountries: string[]
-  onSubscribe: (countryCode: string, email: string) => Promise<void>
 }
 
-export function MonitoringSection({ countries, subscribedCountries, onSubscribe }: MonitoringSectionProps) {
-  const [modalCountry, setModalCountry] = useState<CountrySlot | null>(null)
+export function MonitoringSection({ countries }: MonitoringSectionProps) {
   const [query, setQuery] = useState('')
 
   if (countries.length === 0) return null
@@ -52,41 +48,17 @@ export function MonitoringSection({ countries, subscribedCountries, onSubscribe 
 
         <div className="space-y-2">
           {filtered.length > 0 ? filtered.map(c => (
-            <MonitoringRow
-              key={c.code}
-              country={c}
-              isSubscribed={subscribedCountries.includes(c.code)}
-              onNotify={() => setModalCountry(c)}
-            />
+            <MonitoringRow key={c.code} country={c} />
           )) : (
             <p className="text-xs text-[#444] px-1 py-3">No countries match "{query}"</p>
           )}
         </div>
       </section>
-
-      {modalCountry && (
-        <NotifyModal
-          country={modalCountry}
-          onClose={() => setModalCountry(null)}
-          onSubscribe={async (email) => {
-            await onSubscribe(modalCountry.code, email)
-            setModalCountry(null)
-          }}
-        />
-      )}
     </>
   )
 }
 
-function MonitoringRow({
-  country,
-  isSubscribed,
-  onNotify,
-}: {
-  country: CountrySlot
-  isSubscribed: boolean
-  onNotify: () => void
-}) {
+function MonitoringRow({ country }: { country: CountrySlot }) {
   const label = country.waitlist ? 'Waitlist open' : country.tracked ? null : 'No data'
 
   return (
@@ -105,28 +77,14 @@ function MonitoringRow({
           </p>
         </div>
       </div>
-
-      {country.tracked ? (
-        <button
-          onClick={onNotify}
-          className={`px-3 py-1.5 rounded border text-xs tracking-wide transition-all ${
-            isSubscribed
-              ? 'border-lime-400/40 text-lime-400 bg-lime-400/5'
-              : 'border-dark-400 text-[#555] hover:border-dark-300 hover:text-[#888]'
-          }`}
-        >
-          {isSubscribed ? 'Notify me ✓' : '+ Notify me'}
-        </button>
-      ) : (
-        <a
-          href={country.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-3 py-1.5 rounded border border-dark-500 text-xs text-[#444] hover:text-[#666] transition-colors"
-        >
-          Check directly ↗
-        </a>
-      )}
+      <a
+        href={country.bookingUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-3 py-1.5 rounded border border-dark-500 text-xs text-[#444] hover:text-[#666] transition-colors"
+      >
+        Book ↗
+      </a>
     </div>
   )
 }

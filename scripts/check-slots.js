@@ -8,8 +8,8 @@
  *   France, Germany, Spain, Greece, Belgium, Sweden
  *   These use TLScontact / BLS International which the site doesn't scrape.
  *
- * Optional secrets for email notifications:
- *   SUPABASE_URL, SUPABASE_SERVICE_KEY, RESEND_API_KEY
+ * Required secrets for Telegram notifications:
+ *   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
  */
 
 import { writeFileSync, readFileSync, existsSync } from 'fs'
@@ -154,81 +154,37 @@ async function scrapeSchengenSite() {
 
 // ─── Notification helpers ────────────────────────────────────────────────────
 
-async function sendEmail(to, country, firstDate) {
-  const apiKey = process.env.RESEND_API_KEY
-  if (!apiKey) {
-    console.log('  [skip] RESEND_API_KEY not set')
+async function sendTelegram(country, firstDate) {
+  const token = process.env.TELEGRAM_BOT_TOKEN
+  const chatId = process.env.TELEGRAM_CHAT_ID
+  if (!token || !chatId) {
+    console.log('  [skip] TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set')
     return
   }
+  const text = `${country.flag} *${country.name} — slot available*\n\nFirst date: *${firstDate}*\nVisa centre: ${country.visaCenter}\n\n[Book now](${country.bookingUrl})`
   try {
-    const res = await fetch('https://api.resend.com/emails', {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from: `Slot Watch <onboarding@resend.dev>`,
-        to: [to],
-        subject: `${country.flag} ${country.name} visa slot open — ${firstDate}`,
-        html: `
-<div style="font-family:monospace;background:#0a0a0a;color:#e8e8e8;padding:32px;max-width:520px;margin:0 auto">
-  <p style="color:#555;font-size:11px;margin:0 0 24px;letter-spacing:0.15em">SLOT WATCH · LONDON</p>
-  <h2 style="color:#c8ff00;margin:0 0 4px;font-size:22px">${country.flag} ${country.name}</h2>
-  <p style="color:#888;margin:0 0 24px;font-size:13px">${country.visaCenter} · London</p>
-  <p style="color:#e8e8e8;margin:0 0 6px;font-size:13px">First available</p>
-  <p style="color:#c8ff00;font-size:20px;font-weight:bold;margin:0 0 28px">${firstDate}</p>
-  <a href="${country.bookingUrl}"
-     style="display:inline-block;background:#c8ff00;color:#0a0a0a;padding:12px 28px;text-decoration:none;font-weight:bold;border-radius:4px;font-size:13px;letter-spacing:0.05em">
-    Book now →
-  </a>
-  <p style="color:#333;margin:32px 0 0;font-size:11px">
-    You're receiving this because you subscribed to Slot Watch alerts for ${country.name}.
-  </p>
-</div>`,
-      }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chatId, text, parse_mode: 'Markdown', disable_web_page_preview: true }),
     })
-    if (res.ok) console.log(`  ✓ email → ${to}`)
+    if (res.ok) console.log(`  ✓ Telegram alert sent for ${country.name}`)
     else {
       const body = await res.text()
-      console.error(`  ✗ email failed ${res.status}: ${body}`)
+      console.error(`  ✗ Telegram failed ${res.status}: ${body}`)
     }
   } catch (err) {
-    console.error(`  ✗ email error: ${err.message}`)
+    console.error(`  ✗ Telegram error: ${err.message}`)
   }
 }
 
 async function notifySubscribers(newlyAvailable) {
-  const supabaseUrl = process.env.SUPABASE_URL
-  const supabaseKey = process.env.SUPABASE_SERVICE_KEY
-  if (!supabaseUrl || !supabaseKey) {
-    console.log('\n[skip] Supabase not configured — no notifications sent')
-    return
-  }
   if (newlyAvailable.length === 0) return
-
-  console.log('\nNotifying subscribers...')
+  console.log('\nSending Telegram alerts...')
   for (const country of newlyAvailable) {
     const firstDate = country.slots[0]?.date
     if (!firstDate) continue
-
-    try {
-      const res = await fetch(
-        `${supabaseUrl}/rest/v1/subscribers?countries=cs.{"${country.code}"}&select=email`,
-        { headers: { apikey: supabaseKey, Authorization: `Bearer ${supabaseKey}` } }
-      )
-      if (!res.ok) {
-        console.error(`  ✗ Supabase query failed: ${res.status}`)
-        continue
-      }
-      const subs = await res.json()
-      console.log(`  ${country.flag} ${country.name}: ${subs.length} subscriber(s)`)
-      for (const sub of subs) {
-        await sendEmail(sub.email, country, firstDate)
-      }
-    } catch (err) {
-      console.error(`  Error notifying ${country.name}: ${err.message}`)
-    }
+    await sendTelegram(country, firstDate)
   }
 }
 

@@ -16,8 +16,7 @@ export function HeroSection({ totalAvailable, totalCountries }: HeroSectionProps
         opens in London.
       </h1>
       <p className="text-sm sm:text-base text-[#555] leading-relaxed max-w-xl">
-        Pick your countries. Add your contact. We notify you the second a slot
-        appears.{' '}
+        Real-time visibility across all Schengen countries in London.{' '}
         <span className="text-[#444]">
           No account. No cost. Checks every hour.
         </span>
