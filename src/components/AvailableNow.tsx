@@ -33,8 +33,6 @@ function AvailableCard({ country }: { country: CountrySlot }) {
   )
   const firstSlot = sortedSlots[0]
   const otherSlots = sortedSlots.slice(1, 3)
-  const totalSlots = country.slots.reduce((sum, s) => sum + s.count, 0)
-
   return (
     <div className="border border-dark-400 rounded-lg p-4 bg-dark-700 fade-in hover:border-dark-300 transition-colors">
       <div className="flex items-center justify-between mb-3">
