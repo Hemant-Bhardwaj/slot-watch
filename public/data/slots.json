@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T09:44:22.615Z",
+  "updatedAt": "2026-06-01T11:55:01.743Z",
   "location": "London, UK",
   "countries": [
     {
@@ -12,7 +12,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "bg",
@@ -24,7 +24,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "hr",
@@ -36,7 +36,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "cy",
@@ -48,7 +48,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "cz",
@@ -60,7 +60,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "dk",
@@ -72,7 +72,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "ee",
@@ -84,7 +84,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "fi",
@@ -96,7 +96,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "hu",
@@ -105,15 +105,10 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/hun/schedule-appointment",
       "tracked": true,
-      "available": true,
+      "available": false,
       "waitlist": false,
-      "slots": [
-        {
-          "date": "2026-07-28",
-          "count": 1
-        }
-      ],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "slots": [],
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "is",
@@ -126,11 +121,11 @@
       "waitlist": false,
       "slots": [
         {
-          "date": "2026-06-02",
+          "date": "2026-06-25",
           "count": 1
         }
       ],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "it",
@@ -142,7 +137,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "lv",
@@ -154,7 +149,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "lt",
@@ -166,7 +161,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "mt",
@@ -178,7 +173,7 @@
       "available": false,
       "waitlist": true,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "nl",
@@ -190,7 +185,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "no",
@@ -202,7 +197,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "pt",
@@ -214,7 +209,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "si",
@@ -226,7 +221,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "ch",
@@ -238,7 +233,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "be",
@@ -250,7 +245,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "fr",
@@ -262,7 +257,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "de",
@@ -274,7 +269,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "gr",
@@ -286,7 +281,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "es",
@@ -298,7 +293,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     },
     {
       "code": "se",
@@ -310,7 +305,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-06-01T09:44:22.615Z"
+      "lastChecked": "2026-06-01T11:55:01.743Z"
     }
   ]
 }
