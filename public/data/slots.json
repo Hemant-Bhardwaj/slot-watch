@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T08:27:12.826Z",
+  "updatedAt": "2026-07-09T11:48:11.882Z",
   "location": "London, UK",
   "countries": [
     {
@@ -12,7 +12,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "bg",
@@ -24,7 +24,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "hr",
@@ -36,7 +36,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "cy",
@@ -48,7 +48,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "cz",
@@ -60,7 +60,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "dk",
@@ -72,7 +72,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "ee",
@@ -84,7 +84,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "fi",
@@ -96,7 +96,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "hu",
@@ -108,7 +108,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "is",
@@ -121,11 +121,11 @@
       "waitlist": false,
       "slots": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-19",
           "count": 1
         }
       ],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "it",
@@ -138,11 +138,11 @@
       "waitlist": false,
       "slots": [
         {
-          "date": "2026-09-10",
+          "date": "2026-09-16",
           "count": 1
         }
       ],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "lv",
@@ -154,7 +154,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "lt",
@@ -163,10 +163,15 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/ltu/schedule-appointment",
       "tracked": true,
-      "available": false,
+      "available": true,
       "waitlist": false,
-      "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "slots": [
+        {
+          "date": "2026-07-14",
+          "count": 2
+        }
+      ],
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "mt",
@@ -178,7 +183,7 @@
       "available": false,
       "waitlist": true,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "nl",
@@ -190,7 +195,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "no",
@@ -202,7 +207,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "pt",
@@ -211,15 +216,10 @@
       "visaCenter": "VFS Global",
       "bookingUrl": "https://visa.vfsglobal.com/gbr/en/prt/schedule-appointment",
       "tracked": true,
-      "available": true,
+      "available": false,
       "waitlist": false,
-      "slots": [
-        {
-          "date": "2026-07-10",
-          "count": 1
-        }
-      ],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "slots": [],
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "si",
@@ -231,7 +231,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "ch",
@@ -243,7 +243,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "be",
@@ -255,7 +255,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "fr",
@@ -267,7 +267,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "de",
@@ -279,7 +279,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "gr",
@@ -291,7 +291,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "es",
@@ -303,7 +303,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     },
     {
       "code": "se",
@@ -315,7 +315,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-07-09T08:27:12.826Z"
+      "lastChecked": "2026-07-09T11:48:11.882Z"
     }
   ]
 }
