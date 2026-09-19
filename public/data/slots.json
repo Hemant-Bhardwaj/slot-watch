@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T19:01:47.292Z",
+  "updatedAt": "2026-09-19T21:52:33.036Z",
   "location": "London, UK",
   "countries": [
     {
@@ -12,7 +12,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "bg",
@@ -24,7 +24,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "hr",
@@ -36,7 +36,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "cy",
@@ -53,7 +53,7 @@
           "count": 1
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "cz",
@@ -65,7 +65,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "dk",
@@ -82,7 +82,7 @@
           "count": 1
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "ee",
@@ -94,7 +94,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "fi",
@@ -108,10 +108,10 @@
       "slots": [
         {
           "date": "2026-10-20",
-          "count": 1
+          "count": 2
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "hu",
@@ -123,7 +123,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "is",
@@ -140,7 +140,7 @@
           "count": 1
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "it",
@@ -152,7 +152,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "lv",
@@ -169,7 +169,7 @@
           "count": 1
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "lt",
@@ -186,7 +186,7 @@
           "count": 1
         }
       ],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "mt",
@@ -198,7 +198,7 @@
       "available": false,
       "waitlist": true,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "nl",
@@ -210,7 +210,7 @@
       "available": false,
       "waitlist": true,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "no",
@@ -222,7 +222,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "pt",
@@ -234,7 +234,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "si",
@@ -246,7 +246,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "ch",
@@ -258,7 +258,7 @@
       "available": false,
       "waitlist": true,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "be",
@@ -270,7 +270,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "fr",
@@ -282,7 +282,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "de",
@@ -294,7 +294,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "gr",
@@ -306,7 +306,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "es",
@@ -318,7 +318,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     },
     {
       "code": "se",
@@ -330,7 +330,7 @@
       "available": false,
       "waitlist": false,
       "slots": [],
-      "lastChecked": "2026-09-19T19:01:47.292Z"
+      "lastChecked": "2026-09-19T21:52:33.036Z"
     }
   ]
 }
